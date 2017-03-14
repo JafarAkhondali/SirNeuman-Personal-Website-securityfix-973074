@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Assignment 5 Template</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+	
+	<style>
+		body {
+ 			background-color: white;
+            font-family: 'Play', 'sans-serif';
+		}
+
+		#container {
+			width: 2125px;
+			height: 100%;
+			margin: auto;
+		}
+		
+		#canvas {
+			width: inherit;
+			height: 450px;
+			position: absolute;
+			top: 50%;
+			margin-top: -220px;
+            margin-left: 10px;
+			padding-left: 25px;
+			padding-right: 25px; 
+		}
+
+		canvas {
+			margin-left: 50px;
+			margin-right: 50px;
+			background-color: #e0e0e0; /* feel free to change/remove this color */
+		}
+        
+        #textA {
+            width: 400px;
+            text-align: center;
+            margin-left: 180px;
+        }
+        
+        #textB {
+            width: 400px;
+            text-align: center;
+            margin-left: 900px;
+            margin-top: -95px;
+        }
+        
+        #textC {
+            width: 400px;
+            text-align: center;
+            margin-left: 1600px;
+            margin-top: -95px;
+        }
+        
+        #add-button {
+            margin-right: 100px;
+        }
+        
+        #sub-button {
+        }
+        
+        #buttons {
+            width: 800px;
+            margin-left: 1700px;
+
+        }
+	</style>
+</head>
+
+<body>
+    <div id="textA">
+        <h1>Hover over canvas to shift image</h1>
+    </div>
+    <div id="textB">
+        <h1>Click on image to choose color</h1>
+    </div>
+    <div id="textC">
+        <h1>Watch animation</h1>
+    </div>
+    <div id="buttons">
+        <button id="add-button" type="button">Add</button>
+        <button id="sub-button" type="button">Subtract</button>
+    </div>
+	<div id="container">
+		<div id="canvas">
+			<canvas id="moverCan" width="600" height="450"></canvas>
+			<canvas id="imageCan" width="600" height="450"></canvas>
+			<canvas id="animCan" width="600" height="450"></canvas>
+		</div>
+	</div>
+    <script type="text/javascript" src="htmlcanvas.js"></script>
+</body>
+
+</html>

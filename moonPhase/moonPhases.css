@@ -1,0 +1,55 @@
+#container {
+    width: 2000px;
+    height: 100%;
+    margin: auto;
+}
+
+#canvas {
+    width: inherit;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    margin-top: -300px;
+    margin-left: 10px;
+    padding-left: 25px;
+    padding-right: 25px; 
+}
+
+canvas {
+    margin-left: 400px;
+    margin-top: 0px;
+    background-color: #e0e0e0; 
+}
+
+#earth-image {
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+
+
+
+#theSun {
+    width: 800px;
+    height: 800px;
+    background: red;
+    transform-origin: 45% 52%;
+    -webkit-transform-origin: 45% 52%;
+    transform: translate3d(-350px, -400px, 200px);
+    -webkit-transform: translate3d(-350px, -400px, 200px);
+    animation: spin 5s;
+    -webkit-animation: spin 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {transform: rotateZ(0deg); background: red;}
+    to {transform: rotateZ(360deg); background: white;}
+}
+
+@-webkit-keyframes spin {
+    from {transform: rotateZ(0deg); background: red;}
+    to {transform: rotateZ(360deg); background: white;}
+}
